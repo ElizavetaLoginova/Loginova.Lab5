@@ -44,16 +44,16 @@ char* Race::Getcarrying()
 	return carrying;
 }
 
-double Race::GetTotal—ost()
+double Race::GetTotal√ëost()
 {
-	return total—ost;
+	return total√ëost;
 }
 
-void Race::SetTotal—ost()
+void Race::SetTotal√ëost()
 {
-	total—ost = 0;
+	total√ëost = 0;
 	for(int i = 0; i < M; i++)
-		total—ost += marks[i];
+		total√ëost += marks[i];
 }
 
 void Race::SetRace(char* s1, char* s2, char* s3, int* a)
@@ -62,14 +62,14 @@ void Race::SetRace(char* s1, char* s2, char* s3, int* a)
 	LicensePlate(s2);
 	Carrying(s3);
 	SetMarks(a);
-	SetTotal—ost();
+	SetTotal√ëost();
 }
 
 void Race::DisplayRace()
 {
 	cout << endl << carModel << " " << licensePlate << ", \t";
 	cout.precision(3);
-	cout << total—ost << "  , \t" <<  carrying << ".";
+	cout << total√ëost << "  , \t" <<  carrying << ".";
 	cout << "\tMarks: ";
 	for(int i = 0; i < M; i++)
 		cout << marks[i] << "  ";
