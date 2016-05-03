@@ -29,13 +29,13 @@ int main()
 	char carryingTag[N];
 	cout << "\nEnter the carrying-tag:";
 	cin >> carryingTag;
-	double lowtotal—ost, uppertotal—ost;
-	cout << "\nEnter the low boundary of total—ost:";
-	cin >> lowtotal—ost;
-	cout << "\nEnter the upper boundary of total—ost:";
-	cin >> uppertotal—ost;
+	double lowtotal√ëost, uppertotal√ëost;
+	cout << "\nEnter the low boundary of total√ëost:";
+	cin >> lowtotal√ëost;
+	cout << "\nEnter the upper boundary of total√ëost:";
+	cin >> uppertotal√ëost;
 	cout << "\n\nThe list of choise-Races:\n";
-	DisplayChoise(Races, n, carryingTag, lowtotal—ost, uppertotal—ost);
+	DisplayChoise(Races, n, carryingTag, lowtotal√ëost, uppertotal√ëost);
 	cout << "\n\nThe sorting list of Races: \n";
 	SortcarModel(Races, n);
 	DisplayArray(Races, n);
@@ -101,8 +101,8 @@ void DisplayArray(Race* array, int n)
 void DisplayChoise(Race* array, int dimension, char* carryingTag, double lowMark, double upperMark)
 {
 	for (int i = 0; i < dimension; i++)
-	if (!strcmp(array[i].Getcarrying(), carryingTag) && array[i].GetTotal—ost()
-		<= upperMark  &&  array[i].GetTotal—ost() >= lowMark)
+	if (!strcmp(array[i].Getcarrying(), carryingTag) && array[i].GetTotal√ëost()
+		<= upperMark  &&  array[i].GetTotal√ëost() >= lowMark)
 		array[i].DisplayRace();
 }
 
