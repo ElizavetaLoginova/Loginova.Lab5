@@ -14,7 +14,7 @@ public:
 	void Carrying(char*);
 	void SetMarks(int*);
 	void SetRace(char*, char*, char*, int*);
-	double GetTotal—ost();
+	double GetTotal√ëost();
 	char* GetcarModel();
 	char* GetlicensePlate();
 	char* Getcarrying();
@@ -22,8 +22,8 @@ public:
 private:
 	char carModel[N], licensePlate[N], carrying[N];
 	int marks[M];
-	double total—ost;
-	void SetTotal—ost();
+	double total√ëost;
+	void SetTotal√ëost();
 };
 
 #endif
