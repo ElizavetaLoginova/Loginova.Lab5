@@ -27,7 +27,51 @@ void Swap(Race&, Race&);
 
 int main()
 {
-	int n;
+	char fileName[N] = "List.bin";
+	enum { Init = 1, Create, Display, Add, Change, Remove, Sort, Exit };
+	while (true)
+	{
+		int Key = Menu();
+		if (Key == Exit)
+			return 0;
+		system("cls");
+		switch (Key)
+		{
+		case Init:
+			InitNameFile(fileName);
+			SystemFun();
+			break;
+		case Create:
+			InitFile(fileName);
+			SystemFun();
+			break;
+		case Display:
+			DisplayFile(fileName);
+			SystemFun();
+			break;
+		case Add:
+			AddToEndFile(fileName);
+			SystemFun();
+			break;
+		case Change:
+			ChangeFile(fileName);
+			SystemFun();
+			break;
+		case Remove:
+			RemoveFromFile(fileName);
+			SystemFun();
+			break;
+		case Sort:
+			SortingFile(fileName);
+			SystemFun();
+			break;
+		default:
+			cout << "\nIncorrect input! Try again!";
+			SystemFun();
+		}
+	}
+
+	
 	cout << "\nEnter the number of Races:";
 	cin >> n;
 	system("cls");
