@@ -43,13 +43,13 @@ int main()
 	char carryingTag[N];
 	cout << "\nEnter the carrying-tag:";
 	cin >> carryingTag;
-	double lowtotal—ost, uppertotal—ost;
-	cout << "\nEnter the low boundary of total—ost:";
-	cin >> lowtotal—ost;
-	cout << "\nEnter the upper boundary of total—ost:";
-	cin >> uppertotal—ost;
+	double lowtotal√ëost, uppertotal√ëost;
+	cout << "\nEnter the low boundary of total√ëost:";
+	cin >> lowtotal√ëost;
+	cout << "\nEnter the upper boundary of total√ëost:";
+	cin >> uppertotal√ëost;
 	cout << "\n\nThe list of choise-Races:\n";
-	DisplayChoise(Races, n, carryingTag, lowtotal—ost, uppertotal—ost);
+	DisplayChoise(Races, n, carryingTag, lowtotal√ëost, uppertotal√ëost);
 	cout << "\n\nThe sorting list of Races: \n";
 	SortcarModel(Races, n);
 	DisplayArray(Races, n);
@@ -112,11 +112,11 @@ void DisplayArray(Race* array, int n)
 	cout << endl;
 }
 
-void DisplayChoise(Race* array, int dimension, char* carryingTag, double lowUni—ost, double upperUni—ost)
+void DisplayChoise(Race* array, int dimension, char* carryingTag, double lowUni√ëost, double upperUni√ëost)
 {
 	for (int i = 0; i < dimension; i++)
-	if (!strcmp(array[i].Getcarrying(), carryingTag) && array[i].GetTotal—ost()
-		<= upperUni—ost  &&  array[i].GetTotal—ost() >= lowUni—ost)
+	if (!strcmp(array[i].Getcarrying(), carryingTag) && array[i].GetTotal√ëost()
+		<= upperUni√ëost  &&  array[i].GetTotal√ëost() >= lowUni√ëost)
 		array[i].DisplayRace();
 }
 
@@ -256,7 +256,7 @@ void SortingFile(char* fileName)
 		streamInOut.read((char*)&manOne, bufSize);
 		while (streamInOut.read((char*)&manTwo, bufSize))
 		{
-			if (manTwo.GetTotal—ost() < manOne.GetTotal—ost())
+			if (manTwo.GetTotal√ëost() < manOne.GetTotal√ëost())
 			{
 				streamInOut.seekp(-2 * bufSize, ios::cur);
 				streamInOut.write((char*)&manTwo, bufSize);
