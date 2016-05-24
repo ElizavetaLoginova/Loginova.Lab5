@@ -23,10 +23,10 @@ void Race::Carrying(char* s)
 	strcpy(carrying,s);
 }
 
-void Race::SetUni—osts(int* A)
+void Race::SetUni√ëosts(int* A)
 {
 	for(int i = 0; i < M; i++)
-		Uni—osts[i] = A[i];
+		Uni√ëosts[i] = A[i];
 }
 
 char* Race::GetcarModel()
@@ -44,16 +44,16 @@ char* Race::Getcarrying()
 	return carrying;
 }
 
-double Race::GetTotal—ost()
+double Race::GetTotal√ëost()
 {
-	return total—ost;
+	return total√ëost;
 }
 
-void Race::SetTotal—ost()
+void Race::SetTotal√ëost()
 {
-	total—ost = 0;
+	total√ëost = 0;
 	for(int i = 0; i < M; i++)
-		total—ost += Uni—osts[i];
+		total√ëost += Uni√ëosts[i];
 }
 
 void Race::SetRace(char* s1, char* s2, char* s3, int* a)
@@ -61,18 +61,18 @@ void Race::SetRace(char* s1, char* s2, char* s3, int* a)
 	Model(s1);
 	LicensePlate(s2);
 	Carrying(s3);
-	SetUni—osts(a);
-	SetTotal—ost();
+	SetUni√ëosts(a);
+	SetTotal√ëost();
 }
 
 void Race::DisplayRace()
 {
 	cout << endl << carModel << " " << licensePlate << ", \t";
 	cout.precision(3);
-	cout << total—ost << "  , \t" <<  carrying << ".";
-	cout << "\tUni—osts: ";
+	cout << total√ëost << "  , \t" <<  carrying << ".";
+	cout << "\tUni√ëosts: ";
 	for(int i = 0; i < M; i++)
-		cout << Uni—osts[i] << "  ";
+		cout << Uni√ëosts[i] << "  ";
 }
 
 void Race::EnterRace()
@@ -82,7 +82,7 @@ void Race::EnterRace()
 	cout << "Enter the model of car:";
 	cin.ignore();
 	cin.getline(carModel, N, '\n');
-	cout << "Enter the licence plate (π):";
+	cout << "Enter the licence plate (¬π):";
 	cin.getline(licensePlate, N, '\n');
 	cout << "Enter the carring (in tons):";
 	cin.getline(carrying, N, '\n');
