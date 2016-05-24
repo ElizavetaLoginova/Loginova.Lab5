@@ -12,9 +12,9 @@ public:
 	void Model(char*);
 	void LicensePlate(char*);
 	void Carrying(char*);
-	void SetUni—osts(int*);
+	void SetUni√ëosts(int*);
 	void SetRace(char*, char*, char*, int*);
-	double GetTotal—ost();
+	double GetTotal√ëost();
 	char* GetcarModel();
 	char* GetlicensePlate();
 	char* Getcarrying();
@@ -22,9 +22,9 @@ public:
 	void EnterRace();
 private:
 	char carModel[N], licensePlate[N], carrying[N];
-	int Uni—osts[M];
-	double total—ost;
-	void SetTotal—ost();
+	int Uni√ëosts[M];
+	double total√ëost;
+	void SetTotal√ëost();
 };
 
 #endif
